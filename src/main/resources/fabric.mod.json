@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "id": "magicmod",
+  "environment": "*",
+  "version": "${version}",
+  "entrypoints": {
+    "preLaunch": [
+      "net.devtech.magicmod.MagicMod"
+    ]
+  }
+}
