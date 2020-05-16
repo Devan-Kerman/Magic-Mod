@@ -55,7 +55,7 @@ public class MagicMod implements PreLaunchEntrypoint {
 					Class<?> magic = Class.forName("magic." + id);
 					Method method = magic.getDeclaredMethod("i", Map.class);
 					method.invoke(null, entryMap);
-				} catch (ReflectiveOperationException e) {}
+				} catch (ReflectiveOperationException ignored) {}
 			}
 		} catch (ReflectiveOperationException e) {
 			throw new RuntimeException(e);
